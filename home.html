@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNAUTO</title>
+    <link rel="icon" href="resources/img/Logo_ut.png" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+    <link rel="stylesheet" href="resources/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="home.html"><img src="resources/img/Logo_unauto.png" class="logo" alt=""></a>
+            <nav>
+                <a href="lineas.html" class="headerbtn">LÍNEAS</a>
+                <div class="dropdown">
+                    <button class="dropbtn">HORARIOS</button>
+                    <div class="dropdown-content">
+                        <!--<a href="https://unauto.es/horarios/">Consultar por ruta</a>-->
+                        <a href="consultaruta.html">Consultar por ruta</a>
+                        <!--<a href="https://unauto.es/tiempos-de-llegada/">Consultar por parada</a>-->
+                        <a href="consultaparada.html">Consultar por parada</a>
+                    </div>
+                    <img src="resources/img/icons8-flecha-ampliar-50.png" alt="" class="size-30">
+                </div>
+                <a href="tarifas.html" class="headerbtn">TARIFAS</a>
+                <div class="dropdown">
+                    <button class="dropbtn">GRUPO RUIZ</button>
+                    <div class="dropdown-content">
+                        <a href="quienes-somos.html">QUIÉNES SOMOS</a>
+                        <a href="sugerencias.html">SUGERENCIAS</a>
+                        <a href="reclamaciones-y-quejas.html">RECLAMACIONES Y QUEJAS</a>
+                        <a href="trabaja-con-nosotros.html">TRABAJA CON NOSOTROS</a>
+                        <a href="home.html#mas">MÁS</a>
+                    </div>
+                    <img src="resources/img/icons8-flecha-ampliar-50.png" alt="" class="size-30">
+                </div>
+                <a href="userconfig.html" class="headerbtn"><img src="resources/img/icons8-usuario-24.png"
+                        alt=""></a>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="seccion1">
+                <div class="busqueda">
+                    <div>
+                        <h3>FECHA Y HORA DE SALIDA</h3>
+                        <div class="bg-white div-pill">
+                            <input type="datetime-local" id="fecha_hora">
+                        </div>
+                        <div class="bg-grey div-pill h-align-center larger">
+                            <p class="shadow-b">Horario por parada</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>UBICACIÓN DE SALIDA</h3>
+                        <div class="bg-white div-pill">
+                            <div class="content-select">
+                                <select>
+                                    <option value="" disabled selected>SELECCIONE UNA RUTA</option>
+                                    <option value="AIREN (URBANIZACION 1)">AIREN (URBANIZACION 1)</option>
+                                    <option value="CALLE VALDEMOLINOS">CALLE VALDEMOLINOS</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (H. CIGARRALES)">CTRA. CIRCUNVALACIÓN (H.
+                                        CIGARRALES)</option>
+                                    <option value="FRENTE CEMENTERIO PUERTA LATERAL">FRENTE CEMENTERIO PUERTA LATERAL
+                                    </option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (H. DOMÉNICO)">CTRA. CIRCUNVALACIÓN (H.
+                                        DOMÉNICO)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (HOSPITAL DEL VALLE)">CTRA. CIRCUNVALACIÓN
+                                        (HOSPITAL DEL VALLE)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (MIRADOR ERMITA)">CTRA. CIRCUNVALACIÓN (MIRADOR
+                                        ERMITA)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (FRENTE H. CIGARRALES)">CTRA. CIRCUNVALACIÓN
+                                        (FRENTE H. CIGARRALES)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (H. CIUDAD DE TOLEDO)">CTRA. CIRCUNVALACIÓN (H.
+                                        CIUDAD DE TOLEDO)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (LA RAMA)">CTRA. CIRCUNVALACIÓN (LA RAMA)
+                                    </option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (PUENTE SAN MARTÍN)">CTRA. CIRCUNVALACIÓN
+                                        (PUENTE SAN MARTÍN)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (ENTRADA PUENTE NUEVO)">CTRA. CIRCUNVALACIÓN
+                                        (ENTRADA PUENTE NUEVO)</option>
+                                    <option value="CTRA. MOCEJÓN, GLORIETA URB. CASA DE CAMPO">CTRA. MOCEJÓN, GLORIETA
+                                        URB. CASA DE CAMPO</option>
+                                    <option value="AVDA SANTA BÁRBARA (FRENTE POLIDEPORTIVO)">AVDA SANTA BÁRBARA (FRENTE
+                                        POLIDEPORTIVO)</option>
+                                    <option value="CTRA. MOCEJÓN, RESIDENCIA SAN JOSÉ">CTRA. MOCEJÓN, RESIDENCIA SAN
+                                        JOSÉ</option>
+                                    <option value="CTRA. MOCEJÓN (ENTRADA AZUCAICA)">CTRA. MOCEJÓN (ENTRADA AZUCAICA)
+                                    </option>
+                                    <option value="CTRA. MOCEJÓN (ENTRADA AZUCAICA)">CTRA. MOCEJÓN (ENTRADA AZUCAICA)
+                                    </option>
+                                    <option value="CTRA. MOCEJÓN (RES. SAN JOSÉ)">CTRA. MOCEJÓN (RES. SAN JOSÉ)</option>
+                                    <option value="CTRA. NAVALPINO (SALIDA PUENTE)">CTRA. NAVALPINO (SALIDA PUENTE)
+                                    </option>
+                                    <option value="CTRA. NAVALPINO (OLIVILLA)">CTRA. NAVALPINO (OLIVILLA)</option>
+                                    <option value="CTRA. NAVALPINO (CAMPING)">CTRA. NAVALPINO (CAMPING)</option>
+                                    <option value="CTRA. NAVALPINO (OLIVAR DE LOS POZOS)">CTRA. NAVALPINO (OLIVAR DE LOS
+                                        POZOS)</option>
+                                    <option value="CTRA. NAVALPINO (OLIVILLA)">CTRA. NAVALPINO (OLIVILLA)</option>
+                                    <option value="CTRA. NAVALPINO (ROTONDA PUENTE CAVA)">CTRA. NAVALPINO (ROTONDA
+                                        PUENTE CAVA)</option>
+                                    <option value="ESPARTEROS, ESQUINA VIRGEN CHICA">ESPARTEROS, ESQUINA VIRGEN CHICA
+                                    </option>
+                                    <option value="AVDA SANTA BÁRBARA (BANCO)">AVDA SANTA BÁRBARA (BANCO)</option>
+                                    <option value="EST. DE AUTOBUSES (DIRECCION STA.BÁRBARA-POLÍGONO)">EST. DE AUTOBUSES
+                                        (DIRECCION STA.BÁRBARA-POLÍGONO)</option>
+                                    <option value="EST. DE AUTOBUSES, DIRECCIÓN CASCO HISTÓRICO">EST. DE AUTOBUSES,
+                                        DIRECCIÓN CASCO HISTÓRICO</option>
+                                    <option value="FRESNEDOSO (KIOSKO PEPE)">FRESNEDOSO (KIOSKO PEPE)</option>
+                                    <option value="RÍO FRESNEDOSO (ESQ. VALDEYERNOS)">RÍO FRESNEDOSO (ESQ. VALDEYERNOS)
+                                    </option>
+                                </select>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="h-align-center">
+                            <h1>BÚSQUEDA RUTAS</h1>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>UBICACION DE DESTINO</h3>
+                        <div class="bg-white div-pill dropdown">
+                            <div class="content-select">
+                                <select>
+                                    <option value="" disabled selected>SELECCIONE UNA RUTA</option>
+                                    <option value="AIREN (URBANIZACION 1)">AIREN (URBANIZACION 1)</option>
+                                    <option value="CALLE VALDEMOLINOS">CALLE VALDEMOLINOS</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (H. CIGARRALES)">CTRA. CIRCUNVALACIÓN (H.
+                                        CIGARRALES)</option>
+                                    <option value="FRENTE CEMENTERIO PUERTA LATERAL">FRENTE CEMENTERIO PUERTA LATERAL
+                                    </option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (H. DOMÉNICO)">CTRA. CIRCUNVALACIÓN (H.
+                                        DOMÉNICO)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (HOSPITAL DEL VALLE)">CTRA. CIRCUNVALACIÓN
+                                        (HOSPITAL DEL VALLE)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (MIRADOR ERMITA)">CTRA. CIRCUNVALACIÓN (MIRADOR
+                                        ERMITA)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (FRENTE H. CIGARRALES)">CTRA. CIRCUNVALACIÓN
+                                        (FRENTE H. CIGARRALES)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (H. CIUDAD DE TOLEDO)">CTRA. CIRCUNVALACIÓN (H.
+                                        CIUDAD DE TOLEDO)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (LA RAMA)">CTRA. CIRCUNVALACIÓN (LA RAMA)
+                                    </option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (PUENTE SAN MARTÍN)">CTRA. CIRCUNVALACIÓN
+                                        (PUENTE SAN MARTÍN)</option>
+                                    <option value="CTRA. CIRCUNVALACIÓN (ENTRADA PUENTE NUEVO)">CTRA. CIRCUNVALACIÓN
+                                        (ENTRADA PUENTE NUEVO)</option>
+                                    <option value="CTRA. MOCEJÓN, GLORIETA URB. CASA DE CAMPO">CTRA. MOCEJÓN, GLORIETA
+                                        URB. CASA DE CAMPO</option>
+                                    <option value="AVDA SANTA BÁRBARA (FRENTE POLIDEPORTIVO)">AVDA SANTA BÁRBARA (FRENTE
+                                        POLIDEPORTIVO)</option>
+                                    <option value="CTRA. MOCEJÓN, RESIDENCIA SAN JOSÉ">CTRA. MOCEJÓN, RESIDENCIA SAN
+                                        JOSÉ</option>
+                                    <option value="CTRA. MOCEJÓN (ENTRADA AZUCAICA)">CTRA. MOCEJÓN (ENTRADA AZUCAICA)
+                                    </option>
+                                    <option value="CTRA. MOCEJÓN (ENTRADA AZUCAICA)">CTRA. MOCEJÓN (ENTRADA AZUCAICA)
+                                    </option>
+                                    <option value="CTRA. MOCEJÓN (RES. SAN JOSÉ)">CTRA. MOCEJÓN (RES. SAN JOSÉ)</option>
+                                    <option value="CTRA. NAVALPINO (SALIDA PUENTE)">CTRA. NAVALPINO (SALIDA PUENTE)
+                                    </option>
+                                    <option value="CTRA. NAVALPINO (OLIVILLA)">CTRA. NAVALPINO (OLIVILLA)</option>
+                                    <option value="CTRA. NAVALPINO (CAMPING)">CTRA. NAVALPINO (CAMPING)</option>
+                                    <option value="CTRA. NAVALPINO (OLIVAR DE LOS POZOS)">CTRA. NAVALPINO (OLIVAR DE LOS
+                                        POZOS)</option>
+                                    <option value="CTRA. NAVALPINO (OLIVILLA)">CTRA. NAVALPINO (OLIVILLA)</option>
+                                    <option value="CTRA. NAVALPINO (ROTONDA PUENTE CAVA)">CTRA. NAVALPINO (ROTONDA
+                                        PUENTE CAVA)</option>
+                                    <option value="ESPARTEROS, ESQUINA VIRGEN CHICA">ESPARTEROS, ESQUINA VIRGEN CHICA
+                                    </option>
+                                    <option value="AVDA SANTA BÁRBARA (BANCO)">AVDA SANTA BÁRBARA (BANCO)</option>
+                                    <option value="EST. DE AUTOBUSES (DIRECCION STA.BÁRBARA-POLÍGONO)">EST. DE AUTOBUSES
+                                        (DIRECCION STA.BÁRBARA-POLÍGONO)</option>
+                                    <option value="EST. DE AUTOBUSES, DIRECCIÓN CASCO HISTÓRICO">EST. DE AUTOBUSES,
+                                        DIRECCIÓN CASCO HISTÓRICO</option>
+                                    <option value="FRESNEDOSO (KIOSKO PEPE)">FRESNEDOSO (KIOSKO PEPE)</option>
+                                    <option value="RÍO FRESNEDOSO (ESQ. VALDEYERNOS)">RÍO FRESNEDOSO (ESQ. VALDEYERNOS)
+                                    </option>
+                                </select>
+                                <i></i>
+                            </div>
+                        </div>
+                        <div class="bg-red div-pill h-align-center larger">
+                            <p class="shadow-b">Buscar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="seccion2" class="seccion2">
+                <h2>CONSULTAR HORARIO RUTAS</h2>
+                <div>
+                    <div id="s2-frame1" class="bg-white border-s1-dark content-select">
+                        <select>
+                            <option value="" disabled selected>SELECCIONE UNA RUTA</option>
+                            <option value="AIREN (URBANIZACION 1)">AIREN (URBANIZACION 1)</option>
+                            <option value="CALLE VALDEMOLINOS">CALLE VALDEMOLINOS</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (H. CIGARRALES)">CTRA. CIRCUNVALACIÓN (H.
+                                CIGARRALES)</option>
+                            <option value="FRENTE CEMENTERIO PUERTA LATERAL">FRENTE CEMENTERIO PUERTA LATERAL
+                            </option>
+                            <option value="CTRA. CIRCUNVALACIÓN (H. DOMÉNICO)">CTRA. CIRCUNVALACIÓN (H.
+                                DOMÉNICO)</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (HOSPITAL DEL VALLE)">CTRA. CIRCUNVALACIÓN
+                                (HOSPITAL DEL VALLE)</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (MIRADOR ERMITA)">CTRA. CIRCUNVALACIÓN (MIRADOR
+                                ERMITA)</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (FRENTE H. CIGARRALES)">CTRA. CIRCUNVALACIÓN
+                                (FRENTE H. CIGARRALES)</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (H. CIUDAD DE TOLEDO)">CTRA. CIRCUNVALACIÓN (H.
+                                CIUDAD DE TOLEDO)</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (LA RAMA)">CTRA. CIRCUNVALACIÓN (LA RAMA)
+                            </option>
+                            <option value="CTRA. CIRCUNVALACIÓN (PUENTE SAN MARTÍN)">CTRA. CIRCUNVALACIÓN
+                                (PUENTE SAN MARTÍN)</option>
+                            <option value="CTRA. CIRCUNVALACIÓN (ENTRADA PUENTE NUEVO)">CTRA. CIRCUNVALACIÓN
+                                (ENTRADA PUENTE NUEVO)</option>
+                            <option value="CTRA. MOCEJÓN, GLORIETA URB. CASA DE CAMPO">CTRA. MOCEJÓN, GLORIETA
+                                URB. CASA DE CAMPO</option>
+                            <option value="AVDA SANTA BÁRBARA (FRENTE POLIDEPORTIVO)">AVDA SANTA BÁRBARA (FRENTE
+                                POLIDEPORTIVO)</option>
+                            <option value="CTRA. MOCEJÓN, RESIDENCIA SAN JOSÉ">CTRA. MOCEJÓN, RESIDENCIA SAN
+                                JOSÉ</option>
+                            <option value="CTRA. MOCEJÓN (ENTRADA AZUCAICA)">CTRA. MOCEJÓN (ENTRADA AZUCAICA)
+                            </option>
+                            <option value="CTRA. MOCEJÓN (ENTRADA AZUCAICA)">CTRA. MOCEJÓN (ENTRADA AZUCAICA)
+                            </option>
+                            <option value="CTRA. MOCEJÓN (RES. SAN JOSÉ)">CTRA. MOCEJÓN (RES. SAN JOSÉ)</option>
+                            <option value="CTRA. NAVALPINO (SALIDA PUENTE)">CTRA. NAVALPINO (SALIDA PUENTE)
+                            </option>
+                            <option value="CTRA. NAVALPINO (OLIVILLA)">CTRA. NAVALPINO (OLIVILLA)</option>
+                            <option value="CTRA. NAVALPINO (CAMPING)">CTRA. NAVALPINO (CAMPING)</option>
+                            <option value="CTRA. NAVALPINO (OLIVAR DE LOS POZOS)">CTRA. NAVALPINO (OLIVAR DE LOS
+                                POZOS)</option>
+                            <option value="CTRA. NAVALPINO (OLIVILLA)">CTRA. NAVALPINO (OLIVILLA)</option>
+                            <option value="CTRA. NAVALPINO (ROTONDA PUENTE CAVA)">CTRA. NAVALPINO (ROTONDA
+                                PUENTE CAVA)</option>
+                            <option value="ESPARTEROS, ESQUINA VIRGEN CHICA">ESPARTEROS, ESQUINA VIRGEN CHICA
+                            </option>
+                            <option value="AVDA SANTA BÁRBARA (BANCO)">AVDA SANTA BÁRBARA (BANCO)</option>
+                            <option value="EST. DE AUTOBUSES (DIRECCION STA.BÁRBARA-POLÍGONO)">EST. DE AUTOBUSES
+                                (DIRECCION STA.BÁRBARA-POLÍGONO)</option>
+                            <option value="EST. DE AUTOBUSES, DIRECCIÓN CASCO HISTÓRICO">EST. DE AUTOBUSES,
+                                DIRECCIÓN CASCO HISTÓRICO</option>
+                            <option value="FRESNEDOSO (KIOSKO PEPE)">FRESNEDOSO (KIOSKO PEPE)</option>
+                            <option value="RÍO FRESNEDOSO (ESQ. VALDEYERNOS)">RÍO FRESNEDOSO (ESQ. VALDEYERNOS)
+                            </option>
+                        </select>
+                        <i></i>
+                    </div>
+                    <div id="s2-frame2" class="bg-grey text-white border-s1">
+                        <input type="date" id="fecha">
+                    </div>
+                    <div id="s2-frame3" class="bg-purple text-white border-s1">
+                        <p>CONSULTAR</p>
+                    </div>
+                </div>
+            </div>
+            <div class="seccion3">
+                <h1>PRECIOS PARA EL SERVICIO</h1>
+                <div id="s3-frame1" class="text-white">
+                    <div>
+                        <p>Abono general</p>
+                        <p>17 €</p>
+                    </div>
+                    <div>
+                        <p>Abono joven</p>
+                        <p>13.25€</p>
+                    </div>
+                    <div>
+                        <p>Bono bus</p>
+                        <p>0.32€ por trayecto</p>
+                    </div>
+                    <div>
+                        <p>Tarjeta naranja</p>
+                        <p>0.19€ por trayecto</p>
+                    </div>
+                </div>
+                <div id="s3-frame2" class="text-white">
+                    <a href="https://unauto.es/tarifas/">CONSULTAR OTRAS TARIFAS</a>
+                </div>
+            </div>
+            <div class="seccion4" id="mas">
+                <div>
+                    <div>
+                        <img src="resources/img/news.png" alt="">
+                        <h2>NOTICIAS</h2>
+                    </div>
+                    <div>
+                        <img src="resources/img/recomendaciones.png" alt="">
+                        <h2>RECOMENDACIONES</h2>
+                    </div>
+                    <div>
+                        <img src="resources/img/accesibilidad.png" alt="">
+                        <h2>ACCESIBILIDAD</h2>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="resources/img/technology.png" alt="">
+                        <h2>TECNOLOGIA</h2>
+                    </div>
+                    <div>
+                        <img src="resources/img/mediambiente.png" alt="">
+                        <h2>MEDIO AMBIENTE</h2>
+                    </div>
+                    <div>
+                        <img src="resources/img/maleta_perdida.png" alt="">
+                        <h2>OBJETOS PERDIDOS</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div id="footer-content">
+                <div id="footer-row1">
+                    <div id="contacto">
+                        <h2>¿NECESITAS AYUDA?</h2>
+                        <div><img src="resources/img/phone_handset.png" alt="" class="size-30">
+                            <p>900 506 848 - 925 232 210</p>
+                        </div>
+                        <div><img src="resources/img/envelope.png" alt="" class="size-30">
+                            <p>info@unauto.es</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2>OFICINA DE ATENCIÓN AL USUARIO</h2>
+                        <div><img src="resources/img/phone_handset.png" alt="" class="size-30">
+                            <p>925 220 300</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="terminos">
+                    <h2>TÉRMINOS Y CONDICIONES</h2>
+                    <p id="aviso-legal">Aviso legal</p>
+                    <p id="politica-cookies">Politica de cookies</p>
+                    <p id="politica-privacidad">Politica de privacidad</p>
+                </div>
+                <div id="footer-row3">
+                    <div id="horario">
+                        <h2>ESTACIÓN DE AUTOBUSES</h2>
+                        <p id="h-contenido">L- V: 09:30h a 14h - 15:30h a 19h</p>
+                    </div>
+                    <div id="redes">
+                        <h2>REDES</h2>
+                        <div>
+                            <img src="resources/img/twitter.png" alt="">
+                            <img src="resources/img/instagram_w.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="copyright">
+                <p>&copy; UNAUTO</p>
+                <p>DISEÑADO POR: &copy; ADRINILO</p>
+            </div>
+        </footer>
+    </div>
+    <!-- JavaScript -->
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>
